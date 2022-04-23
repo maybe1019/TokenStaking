@@ -25,7 +25,7 @@ contract Staking {
     function Withdraw() external {
         require(stake[msg.sender] > 0, "You have to value.");
         uint deposited = stake[msg.sender];
-        uint reward = deposited * (S - s[msg.sender]);
+        uint reward = deposited * (S - s[msg.sender]) / 10 ** decimals;
         T = T - deposited;
         stake[msg.sender] = 0;
 
