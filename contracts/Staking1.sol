@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 
+// this contract is Token Staking contract for ERC-20 tokens
+
 pragma solidity >=0.7.0 <0.9.0;
 
 /**
